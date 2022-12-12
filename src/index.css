@@ -21,11 +21,12 @@
 .fa-brands {
   color: white;
   font-size: 3rem;
+  margin: 0% 1rem;
 }
 
 
 @media (max-width: 800px) {
   .dolar-card{
-    width: 50%;
+    width: 20rem;
   }
 }
