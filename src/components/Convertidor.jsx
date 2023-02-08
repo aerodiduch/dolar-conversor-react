@@ -6,18 +6,18 @@ function Convertidor({ valordeventa, valordecompra }) {
   const [quantity, setQuantity] = useState(0);
 
   function calcularVenta() {
-    const valor = quantity*valordecompra
-    const convertido = currency(valor)
-    return convertido.format()
+    const valor = quantity * valordecompra;
+    const convertido = currency(valor);
+    return convertido.format();
   }
 
   function calcularCompra() {
-    const valor = quantity/valordeventa
-    const convertido = currency(valor)
-    return convertido.format()
+    const valor = quantity / valordeventa;
+    const convertido = currency(valor);
+    return convertido.format();
   }
 
-  calcularVenta()
+  calcularVenta();
 
   return (
     <div>
@@ -26,7 +26,7 @@ function Convertidor({ valordeventa, valordecompra }) {
         <input
           onChange={(e) => setQuantity(e.target.value)}
           type="number"
-          min='0'
+          min="0"
           className="text-center form-control"
           placeholder="Monto a convertir"
         />
@@ -36,14 +36,12 @@ function Convertidor({ valordeventa, valordecompra }) {
       </div>
       <div className="valores">
         <p>
-          <span className="fw-bold"> ARS</span> {currency(quantity).format()} -&gt;{" "}
-          <span className="fw-bold">USD</span>{" "}
-          {calcularCompra()} (Compra)
+          <span className="fw-bold"> ARS</span> {currency(quantity).format()}{" "}
+          -&gt; <span className="fw-bold">USD</span> {calcularCompra()} (Compra)
         </p>
         <p>
-          <span className="fw-bold"> USD</span> {currency(quantity).format()} -&gt;{" "}
-          <span className="fw-bold">ARS</span>{" "} 
-          {calcularVenta()} (Venta)
+          <span className="fw-bold"> USD</span> {currency(quantity).format()}{" "}
+          -&gt; <span className="fw-bold">ARS</span> {calcularVenta()} (Venta)
         </p>
       </div>
     </div>
