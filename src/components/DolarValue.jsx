@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Convertidor from "./Convertidor";
+import RedirectButton from "./RedirectButton";
 
 function DolarValue() {
   const [valorVenta, setValorVenta] = useState(null);
@@ -31,6 +32,7 @@ function DolarValue() {
       </div>
       <Convertidor valordeventa={valorVenta} valordecompra={valorCompra} />
       <p className="">Fuente: Ámbito Financiero</p>
+      <RedirectButton />
     </div>
   );
 }

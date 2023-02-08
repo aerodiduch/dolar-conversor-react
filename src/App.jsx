@@ -1,6 +1,7 @@
 import DolarValue from "./components/DolarValue";
 import Footer from "./components/Footer";
 import Steam from "./components/Steam";
+import RedirectButton from "./components/RedirectButton";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
