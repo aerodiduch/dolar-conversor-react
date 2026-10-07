@@ -1,16 +1,31 @@
+# Dólar Blue React
 
-# Dolar Blue React
+[![License: MIT](https://img.shields.io/github/license/aerodiduch/dolar-conversor-react)](LICENSE) ![React](https://img.shields.io/badge/react-20232A?logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/vite-646CFF?logo=vite&logoColor=white) [![Demo on Netlify](https://img.shields.io/badge/demo-Netlify-00C7B7?logo=netlify&logoColor=white)](https://dolar-blue-react.netlify.app/)
 
-Una app que consume en tiempo real la api https://bluelytics.com.ar/#!/ y ofrece un conversor de divisas.
-Este es mi primer proyecto de frontend, utilizando React.js
+[Español](README.es.md)
 
-Además de React, utiliza Boostrap para los estilos, FontAwesome para los iconos y currency.js para el formateo adecuado de los números.
+My first frontend project, made with React. It shows the Argentine blue dollar rate from the [Bluelytics](https://bluelytics.com.ar/) API and converts between pesos and dollars. The app itself is in Spanish.
 
+- **Home (`/`)**: the blue dollar buy and sell rates, plus a converter: type an amount and it shows it in the other currency.
+- **`/steam`**: type a Steam price and it shows it with 75% added for taxes.
 
-## Demo
+Live demo: https://dolar-blue-react.netlify.app/
 
-La app está deployeada en Netlify, puede ser vista a través del siguiente enlance.
+## Run it locally
 
-https://dolar-blue-react.netlify.app/
+You need Node.js.
 
+```sh
+git clone https://github.com/aerodiduch/dolar-conversor-react
+cd dolar-conversor-react
+npm install
+npm run dev
+```
 
+## Stack
+
+React 18 with Vite, React Router, Bootstrap for the styles, Font Awesome for the icons and currency.js to format the amounts.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
